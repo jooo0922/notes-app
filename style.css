@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #7bdaf3;
+  display: flex;
+  flex-wrap: wrap;
+  /* 
+  CSS flex-wrap property는 flex-item 요소들이 강제로 한줄에 배치되게 할 것인지, 
+  또는 가능한 영역 내에서 벗어나지 않고 여러행으로 나누어 표현 할 것인지 결정하는 속성 
+  */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-top: 3rem;
+}
+
+.add{
+  background-color: #9ec862;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.note{
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.note .tools{
+  background-color: #9ec862;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.note .tools button{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.note .main{
+  background-color: #eee;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.note textarea{
+  outline: none;
+  font-family: inherit; 
+  /* input이나 textarea에 들어가는 텍스트나 value의 폰트는 기본값으로 나오기 때문에 이걸 바꾸고 싶다면 body에서 지정한 폰트를 따로 inherit 해주거나 원하는 폰트를 따로 지정해줄 것. */
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+}
+
+.note .hidden{
+  display: none;
+}
